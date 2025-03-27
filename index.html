@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafen Visualisierung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hintergrundbild (deine Karte) -->
+    <div id="map-container">
+        <!-- Icons als Buttons -->
+        <img src="img/icon1.png" class="icon" id="icon1" alt="Icon 1">
+        <img src="img/icon2.png" class="icon" id="icon2" alt="Icon 2">
+    </div>
+
+    <!-- Steckbrief-Fenster -->
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup(1)">&times;</span>
+            <h2>Besucher 1</h2>
+            <img src="img/person1.jpg" alt="Portrait 1">
+            <p>Alter: 34 Jahre</p>
+            <p>Beruf: Süßwassermatrose</p>
+            <p>Interessen: Yachten, Fotografie</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup2">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup(2)">&times;</span>
+            <h2>Besucher 2</h2>
+            <img src="img/person2.jpg" alt="Portrait 2">
+            <p>Alter: 27 Jahre</p>
+            <p>Beruf: Landratte</p>
+            <p>Interessen: Züge, Wollschweine</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
